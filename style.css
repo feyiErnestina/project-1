@@ -95,6 +95,7 @@ color: #66b9a2;
 
 .stat-copy{
     color: #949494;
+    padding: 0 1em;
 }
 
 .card{
@@ -112,7 +113,7 @@ color: #66b9a2;
     background: rgb(126, 51, 27);
     background: linear-gradient(
     120deg,
-     rgba(126,51,27, 0.4) 0%,
+     rgba(126, 51, 27, 0.4) 0%,
     rgba(70, 70, 70, 0.3) 50%,
     rgba(70, 70, 70, 0.3) 100%
     );
@@ -154,6 +155,7 @@ letter-spacing: 6px;
 text-align: left;
 }
 
+
 .card-balance{
     position: relative;
     top: 12em;
@@ -173,4 +175,40 @@ text-align: left;
     display: flex;
     justify-content: space-between;
     align-items:center;
+}
+.card-col{
+    /* font-family: serif; */
+font-weight: 300;
+opacity: 0.7;
+line-height: 1.8em;
+}
+
+.card-title{
+    font-size: 12px;
+}
+
+
+/* Mobile View */
+@media (max-width:900px){
+    .nav-link{
+        display: none;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+    .header{
+        font-size: 2em;
+    }
+    .card{
+        top: 0;
+        left: 0;
+    }
+
+    .card-balance{
+        top: 0;
+    }
 }
